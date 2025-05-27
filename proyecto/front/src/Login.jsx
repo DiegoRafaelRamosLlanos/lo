@@ -11,7 +11,7 @@ function Login({ onLogin }) {
   const users = [
     { username: "administrador", password: "administrador" },
     { username: "secretario", password: "secretario" },
-    { username: "preceptor", password: "preceptor" }
+    { username: "preceptora", password: "preceptora" }
   ];
 
   const handleLogin = (e) => {
