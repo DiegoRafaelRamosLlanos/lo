@@ -7,7 +7,7 @@ const port = 3001;
 
 
 app.use(cors({
-    origin: 'http://localhost:3000',  
+    origin: 'http://192.168.18.201:3000',  
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
 }));

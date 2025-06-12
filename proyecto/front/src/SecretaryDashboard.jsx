@@ -18,11 +18,11 @@ const SecretaryDashboard = ({ onLogout }) => {
 
   useEffect(() => {
     // Cargar datos iniciales
-    axios.get("http://localhost:3001/proyecto/datos")
+    axios.get("http://192.168.18.201:3001/proyecto/datos")
       .then(response => setDatos(response.data))
       .catch(error => console.error("Error:", error));
 
-    axios.get("http://localhost:3001/proyecto/secondSheetData")
+    axios.get("http://192.168.18.201:3001/proyecto/secondSheetData")
       .then(response => setSecondSheetData(response.data))
       .catch(error => console.error("Error:", error));
   }, []);
