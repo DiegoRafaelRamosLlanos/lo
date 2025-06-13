@@ -318,7 +318,7 @@ const Dashboard = ({ onLogout }) => {
 
   const handleSaveChanges = () => {
     if (selectedData) {
-      axios.put(`http://10.0.9.192:3001/proyecto/actualizarUsuario/${selectedData.id}`, selectedData)
+      axios.put(`http://192.168.18.201:3001/proyecto/actualizarUsuario/${selectedData.id}`, selectedData)
         .then(response => {
           setDatos(datos.map(dato => (dato.id === selectedData.id ? { ...dato, ...selectedData } : dato)));
           handleClosePopup();
